@@ -75,15 +75,3 @@ local Window = Rayfield:CreateWindow({
  })
 
  local MCTab = Window:CreateTab("Misc", 4483362458) -- Title, Image
- 
- local Section = MCTab:CreateSection("Themes")
-
- local changeTheme = MCTab:CreateDropdown({
-   Name = "Change Theme",
-   Options = {"Default", "Light", "Green", "DarkBlue"},
-   CurrentOption = {"Default"},
-   Flag = "ThemesDropdown",
-   Callback = function(CurrentOption)
-       Window.Theme = CurrentOption
-   end
-})
